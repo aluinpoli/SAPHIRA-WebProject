@@ -1,0 +1,70 @@
+/* Additional resets */
+li, ul{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+#wrapper {
+width: 1200px;
+height: 675px;
+margin: 0px auto;
+background-color: #B3B7B8;
+border:1px solid rgba(0, 0, 0, 0.21)
+}
+	
+#wrapper:after{
+content: "";
+display:block;
+clear:both;
+
+}
+
+/* Nav styling */
+
+nav {
+background: #232B2E;
+margin: 0;
+padding: 0;
+width: 190px;
+}
+
+header{
+background:white;
+
+}
+
+h1 {
+font-size: 32px;
+padding: 5px;
+text-align: center;
+}
+
+nav ul {
+height: 587px;
+}
+
+nav li {
+text-align:right;
+line-height: 40px;
+
+}
+
+nav li a {
+display:block;
+background:url('images/navMenu.png') repeat-x;
+color:white;
+padding-right:12px;
+font-size: 90%;
+}
+
+nav li a:hover {
+background:url('images/navMenuHovered.png') repeat-x;
+}
+
+
