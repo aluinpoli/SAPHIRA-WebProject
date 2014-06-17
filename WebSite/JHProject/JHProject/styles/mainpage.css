@@ -1,6 +1,7 @@
 ﻿html{
+    background-image: url(../imgs/brushed.png);
     background-color:#eee;
-    font-family:Tahoma, Arial,sans-serif;
+    font-family:Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif, Arial,sans-serif;    
     color:#242b2e;
     font-size:100%;    
 }
