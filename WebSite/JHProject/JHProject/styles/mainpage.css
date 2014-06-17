@@ -1,0 +1,29 @@
+﻿html{
+    background-color:#eee;
+    font-family:Tahoma, Arial,sans-serif;
+    color:#242b2e;
+    font-size:100%;    
+}
+
+/*Mobile portrait (320x480)*/
+/*Mobile landscape (480x320)*/
+@media screen (min-width:300px) and (max-width:600px) {
+    /*here is the hardest thing to refactor..*/ 
+}
+
+/*Small tablet portrait (600x800)*/
+/*Small tablet landscape (800x600)*/
+@media screen (min-width:600px) and (max-width:800px) {
+   
+} 
+
+/*Tablet portrait (768x1024)*/
+/*Tablet landscape (1024x768)*/
+@media screen (min-width:800px) and (max-width:1024px) {
+    
+} 
+
+/*Desktop*/
+@media screen and (min-width:1024px){
+    
+}
