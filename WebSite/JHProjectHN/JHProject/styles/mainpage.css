@@ -1,0 +1,124 @@
+﻿html{
+    background-image: url(../imgs/brushed.png);
+    background-color:#eee;
+    font-family:Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif, Arial,sans-serif;    
+    color:#242b2e;
+    font-size:100%;    
+}
+
+/*Mobile portrait (320x480)*/
+/*Mobile landscape (480x320)*/
+@media screen (min-width:300px) and (max-width:600px) {
+    /*here is the hardest thing to refactor..*/ 
+}
+
+/*Small tablet portrait (600x800)*/
+/*Small tablet landscape (800x600)*/
+@media screen (min-width:600px) and (max-width:800px) {
+   
+} 
+
+/*Tablet portrait (768x1024)*/
+/*Tablet landscape (1024x768)*/
+@media screen (min-width:800px) and (max-width:1024px) {
+    
+} 
+
+/*Desktop*/
+@media screen and (min-width:1024px){
+
+   aside{
+       width:300px;
+       height: 100%;
+       background: #252A2E;
+       float:left;
+
+   }
+    header{
+        width:300px;
+        height: 125px;
+        background: white;
+        float:left;
+    }
+
+    #logo {
+        font-family: 'Cabin Sketch', cursive;
+        font-weight: 400;
+        text-align: center;
+        font-size: 36px;
+        display: block;
+        line-height: 125px;
+    }
+
+   ul {
+        display: block;
+        float: left;
+        width: 300px;
+    }
+
+   li a {
+        display: block;
+        line-height: 60px;
+        font-family: ‘Metrophobic’, Arial, serif;
+        font-weight: 400;
+        color: #6B7072;
+        text-decoration: none;
+        text-align: right;
+        padding-right: 18px;
+        font-size: 20px;
+    }
+
+    li a:hover {
+        background: #418BC9;
+        color:#fff;
+    }
+
+
+    li:first-child{
+        background: url(../imgs/filterBackground.png) repeat-x;
+    }
+
+    a#firstElement {
+        text-align: right;
+        padding-right: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #AEB0B1;
+        line-height: 62px;
+        font-family: ‘Metrophobic’, Arial, serif;
+        font-weight: 400;
+    }
+    li:last-child{
+        border-bottom: 1px solid black;
+    }
+
+
+main {
+
+}
+
+section.box {
+    width: 294px;
+    height: auto;
+    background-color: #242b2e;
+    font-family: Verdana;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.last {
+    background-color: #418bc9;
+}
+
+section.gallery {
+    background-color: #d7d7d7;
+}
+
+section.link {
+    background-color: #cc6633;
+    text-align: center;
+}
