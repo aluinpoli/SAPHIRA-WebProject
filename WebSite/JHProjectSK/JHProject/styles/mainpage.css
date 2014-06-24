@@ -1,0 +1,175 @@
+﻿html{
+    background-image: url(../imgs/brushed.png);
+    background-color:#eee;
+    font-family:Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif, Arial,sans-serif;    
+    color:#242b2e;
+    font-size:100%;    
+}
+
+/*Mobile portrait (320x480)*/
+/*Mobile landscape (480x320)*/
+@media screen (min-width:300px) and (max-width:600px) {
+    /*here is the hardest thing to refactor..*/ 
+}
+
+/*Small tablet portrait (600x800)*/
+/*Small tablet landscape (800x600)*/
+@media screen (min-width:600px) and (max-width:800px) {
+   
+} 
+
+/*Tablet portrait (768x1024)*/
+/*Tablet landscape (1024x768)*/
+@media screen (min-width:800px) and (max-width:1024px) {
+    
+} 
+
+/*Desktop*/
+@media screen and (min-width:1024px) {
+
+    aside {
+        width: 300px;
+        height: 100%;
+        background: #252A2E;
+        float: left;
+        top:0;
+        bottom:0;
+    }
+
+    header {
+        width: 300px;
+        height: 125px;
+        background: white;
+        float: left;
+    }
+
+    #logo {
+        font-family: 'Cabin Sketch', cursive;
+        font-weight: 400;
+        text-align: center;
+        font-size: 36px;
+        display: block;
+        line-height: 125px;
+    }
+
+   aside nav ul {
+        display: block;
+        float: left;
+        width: 300px;
+    }
+
+   aside nav li a {
+        display: block;
+        line-height: 60px;
+        font-family: ‘Metrophobic’, Arial, serif;
+        font-weight: 400;
+        color: #6B7072;
+        text-decoration: none;
+        text-align: right;
+        padding-right: 18px;
+        font-size: 20px;
+    }
+
+    aside nav li a:hover {
+        background: #418BC9;
+        color:#fff;
+    }
+
+
+    aside nav li:first-child{
+        background: url(../imgs/filterBackground.png) repeat-x;
+    }
+
+    a#firstElement {
+        text-align: right;
+        padding-right: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #AEB0B1;
+        line-height: 62px;
+        font-family: ‘Metrophobic’, Arial, serif;
+        font-weight: 400;
+    }
+   aside nav li:last-child{
+        border-bottom: 1px solid black;
+    }
+   #media-links {
+        height: 100%;
+        padding: 5px;
+        text-align: right;        
+   }
+
+    #media-links ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 15px;
+    }
+
+        #media-links a img {
+            width: 8%;
+        }
+
+    #media-links ul li {
+        display: inline;
+    }
+
+    #media-links span {
+        display: block;
+        padding-top: 20px;
+        color: #AEB0B1;
+        font-size: 0.8em;
+        padding-right: 15px;
+    }
+    footer {
+        display: inline-block;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+       
+    }
+    .footer {
+        margin: auto;
+        width: 150px;
+        height: 40px;
+        background-color: #418BC9;
+        text-transform: uppercase;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding-top: 20px;
+    }
+    .footer a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+main {
+}
+section.box {
+    width: 294px;
+    height: auto;
+    background-color: #242b2e;
+    font-family: Verdana;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+section.last {
+    background-color: #418bc9;
+}
+
+section.gallery {
+    background-color: #d7d7d7;
+}
+
+section.link {
+    background-color: #cc6633;
+    text-align: center;
+}
