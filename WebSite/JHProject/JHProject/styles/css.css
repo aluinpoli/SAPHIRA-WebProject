@@ -1,0 +1,242 @@
+﻿html{
+    background-image: url(../imgs/brushed.png);
+    background-color:#eee; 
+    font-family: "Raleway", Arial, sans-serif;    
+    color:#242b2e;
+    font-size:100%;        
+}
+ 
+aside {
+    width:300px;
+    position:fixed;
+    display:block;
+    height:100%;
+    background: #252A2E;
+    float: left;        
+}
+
+header {
+    font-family:"omnes-pro",sans-serif;
+    background-color:white;    
+    background-position:top;
+    vertical-align:middle;
+    width:300px;
+    height: 125px;        
+    float: left;
+    overflow:hidden;
+       
+}
+header figure img{
+    position:absolute;
+    width: 100%;
+    opacity:0.1;
+}
+    
+header h1#logo {
+    font-family:"proxima-nova",sans-serif;
+    padding: 1.5rem 0 0 0;   
+    font-weight: bold;
+    color:#418BC9;      
+    text-align: center;
+    font-size: 2.5rem;
+    display: block;
+    font-style:normal;       
+    line-height: 2.2rem;
+    text-shadow: 0.05rem 0.05rem #000;
+}
+a{
+    color:#fff;
+    text-decoration:none;
+}
+#logo strong{
+    font-size: 3.5rem;
+    display:block;                
+    color:#6B7072;
+    text-shadow: 0.05rem 0.05rem #000;
+        
+        
+}
+nav#tags,
+section#media-links{
+        display:block;  
+        text-align:right;  
+}
+nav#tags div.filter {
+    display:block;
+    background-color:#464B4B;
+    text-align:right;
+    text-shadow: 0.025rem 0.025rem #000;
+}
+    nav#tags div.filter a{       
+    color:#ADAFAC;
+    font-size:1.2rem;
+    line-height:3.5rem;
+    padding-right:1rem;
+}
+    nav#tags ul {        
+    float: left;  
+    width:100%;     
+    padding:0.8rem 0;
+    border-bottom:1px solid #464B4B;
+}
+nav#tags ul li{        
+    font-size:1rem;
+    display:inline-block;        
+    /*padding:0.5rem;*/       
+    margin:0.5rem 0;        
+}
+nav#tags ul li a{
+        border-radius:0.2rem;
+        padding:0.3rem 1rem;
+}
+   
+nav#tags ul li a:hover {
+    background: #418BC9;
+    padding:0.5rem 1rem;
+    color: #fff;
+}
+
+#media-links ul {
+    margin-top:0.5rem;
+    padding:0.8rem 0; 
+    border-bottom:1px solid #464B4B; 
+}
+#media-links ul li {
+    display: inline;
+    /*margin:1rem;*/
+      
+}
+#media-links ul li a {
+        margin:0.5rem;
+}
+#media-links a img {
+    margin-top:0.8rem;
+    width: 8%;
+}
+#media-links span{
+    text-align:right;
+    font-size:0.8rem;
+    color:#ccc;
+    line-height:2rem;
+    margin:0.5rem;
+}
+    
+
+/*to fix footer*/
+footer {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+       
+}
+.footer {
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    background-color: #418BC9;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 20px;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+/*to fix footer*/
+
+
+main { 
+    margin-left:320px;        
+    float:left;
+    display:inline-block;
+    position:relative;
+}
+article{
+    margin-top:1rem;
+}
+section.box {
+    width: 294px;
+    height: auto; 
+    margin-right: 1rem;       
+    display: inline-block;
+    vertical-align: top;
+}
+.pic{
+        background-color: #fff;
+        color:#242b2e;
+}
+.pic h2{
+        margin:1rem;
+        font-size:1.4rem;
+        word-wrap:break-word;
+}
+.pic p{
+        margin:0 1rem 0 1rem;
+        font-size:1rem;
+        line-height:1.5rem;
+        word-wrap:break-word;
+}
+    div.date {
+        border-top:1px solid #e3e3e3;
+        font-size:0.8rem;
+        margin:0 1rem;
+        line-height:2rem;
+    }
+
+.quote{
+    background-color:#cc6633;       
+    text-align:center;        
+    font-style:italic;
+    padding:2rem;       
+}
+.quote h2{
+    font-size:2rem;
+    word-wrap:break-word;        
+    margin:2rem;
+    color:#fff;
+}
+    
+.story{
+    background-color:#418bc9;
+    color: #fff;
+}
+.story h2{
+        margin:1rem;
+        font-size:1.4rem;
+        word-wrap:break-word;
+}
+.story p{
+        margin:0 1rem 0 1rem;
+        font-size:1rem;
+        line-height:1.5rem;
+        word-wrap:break-word;
+}
+
+.box figure img {
+    width: 294px;
+}
+
+/*to fix add content*/
+.add-content{
+    text-align:center;
+    background-color:#ccc; 
+    font-family:'Arial Narrow Bold',  sans-serif;
+    color:rgba(0, 0, 0, 0.2);
+    font-size:3rem;
+    word-wrap:break-word;
+    line-height:4rem;
+    padding:2rem 1rem;       
+}
+
+.add-content span {
+    background-color:rgba(0, 0, 0, 0.1);
+    color:rgba(0, 0, 0, 0.2);
+    border-radius:3rem;
+    padding:0 1.5rem;
+}
+     /*to fix add content END*/
+   
+

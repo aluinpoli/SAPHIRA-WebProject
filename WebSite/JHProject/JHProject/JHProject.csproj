@@ -57,8 +57,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imgs\adobe_products.jpg" />
+    <Content Include="imgs\break.jpg" />
+    <Content Include="imgs\break2.jpg" />
+    <Content Include="imgs\building-website-from-scratch-tips.jpg" />
+    <Content Include="imgs\designer-jokes-design-humor-1.jpg" />
+    <Content Include="imgs\donuts.jpg" />
+    <Content Include="imgs\shutterstock_110345243.jpg" />
+    <Content Include="imgs\web-des.jpg" />
+    <Content Include="imgs\www.pinterest.com.jpg" />
     <Content Include="index.html" />
-    <Content Include="styles\mainpage.css" />
+    <Content Include="styles\css.css" />
     <Content Include="styles\reset.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -74,7 +83,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="imgs\" />
     <Folder Include="script\" />
   </ItemGroup>
   <PropertyGroup>
