@@ -4,5 +4,9 @@ $sql="select * from jokes ";
 $db=new DatabaseConnect;
 $query=$db->execute($sql);
 while ($row = mysqli_fetch_assoc($query)) {
-    echo "<table><tr><th>".$row['joke_id']."</th><th>".$row['joke_title']."</th><th>".$row['joke_content']."</th><th>".$row['joke_date']."</th></tr></table>";
+    $joke[$row['joke_id']]['title']=$row['joke_title'];
+    $joke[$row['joke_id']]['content']=$row['joke_content'];
+    $joke[$row['joke_id']]['date']=$row['joke_date'];
+    $joke[$row['joke_id']]['type']=$row['joke_type'];
+    $joke[$row['joke_id']]['sphere']=$row['joke_sphere'];
 }
