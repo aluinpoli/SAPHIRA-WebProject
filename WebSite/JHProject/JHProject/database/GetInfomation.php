@@ -10,3 +10,6 @@ while ($row = mysqli_fetch_assoc($query)) {
     $joke[$row['joke_id']]['type']=$row['joke_type'];
     $joke[$row['joke_id']]['sphere']=$row['joke_sphere'];
 }
+$num_jokes=mysqli_num_rows($query);
+echo $num_jokes;
+
