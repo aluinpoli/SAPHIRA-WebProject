@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        
+        <form action="database/uploadFile.php" method="post"
+              enctype="multipart/form-data">
+            <label for="title">Joke Title</label>
+            <input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/>
+            <label for="file">Filename:</label>
+            <input type="file" name="file"  id="file"><br>
+            <label for="content" >The Joke</label>
+            <textarea id="content" name="content" ></textarea>
+            <label for="date">Date:</label>
+            <input type="date" name="date" required="required" id="date"/>
+            <label for="textJoke"/>Text format</label>
+            <input type="radio" name="textJoke" id="textJoke" />
+            <label for="imgJoke"/>Image format</label>
+            <input type="radio" name="textJoke" id="imgJoke" />
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>

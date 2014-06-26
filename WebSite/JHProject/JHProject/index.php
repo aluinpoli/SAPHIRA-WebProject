@@ -1,12 +1,24 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>code for break</title>
+    <link rel="shortcut icon" href="imgs/icon.ico">
     <link href="styles/reset.css" rel="stylesheet" />    
     <link href="styles/css.css" rel="stylesheet" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script/addForm.js"></script>   
+    <script src="script/showForm.js"></script>   
 </head>
 <body>
+    <div id="information" style="display: none;">
+        <?php
+            if(isset($message)){
+                echo '<p>'.$message.'</p>';
+            }
+        ?>
+        <p></p>
+    </div>
     <aside class="box">
         <header>
             <!--<figure>
@@ -44,9 +56,10 @@
     ?>
 
     <main class="grid grid-pad">
+        <div id="jokes">
         <?php
             if(isset($joke) && isset($num_jokes)){
-                for ($i = 1; $i <= $num_jokes; $i++) {
+                for ($i = $num_jokes; $i >=1 ; $i--) {
                     if($joke[$i]['type']==1){
                         echo '
                         <section class="box">
@@ -75,14 +88,36 @@
                 }
             }
         ?>
-        
-        
-        
         <selection class="box">
             <article class="box add-content">
-                <h3><span>+</span> ADD</h3>
+                <button id="add" style="width: 350px;height: 200px;"><h3><span>+</span> ADD</h3></button>
             </article>
         </selection>
+        </div>
+        <form action="database/uploadFile.php" style="display: none;" method="post" id="addJoke"
+              enctype="multipart/form-data">
+            <label for="title">Joke Title</label><br>
+            <input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/><br>
+            <div id="imgFormat" style="display: none;" >
+                <label for="file">Filename:</label><br>
+                <input type="file" name="file"  id="file"><br>
+            </div>
+            <div  id="textFormat">
+                <label for="content" >The Joke</label><br>
+                <textarea  id="content" name="content" placeholder="The Joke..." ></textarea><br>
+            </div>
+            <label for="date">Date:</label>
+            <input type="date" name="date" required="required" id="date"/><br>          
+            <input type="radio" name="textJoke" checked="checked" id="textJoke" />
+            <label for="textJoke"/>Text format</label>           
+            <input type="radio" name="textJoke"  id="imgJoke" />
+            <label for="imgJoke"/>Image format</label><br/>
+            <input type="submit" name="submit" id="submit" value="POST">
+        </form>
+        
+        
+        
+        
     </main>
 
     <footer>
