@@ -28,9 +28,9 @@
 
         </header>
         <nav id="tags">
-            <div class="filter"><a href="#">FILTER</a></div>
+            <div class="filter"><a href="#" >FILTER</a></div>
             <ul>
-                <li><a href="#" data-scroll>ALL Jokes</a></li>
+                <li><a href="#" id="allJokes" data-scroll>ALL Jokes</a></li>
                 <li><a href="#" class="active-element" data-scroll>HTML</a></li>
                 <li><a href="#" data-scroll>CSS</a></li>
                 <li><a href="#" data-scroll>C#</a></li>
@@ -88,11 +88,11 @@
                 }
             }
         ?>
-        <selection class="box">
-            <article class="box add-content">
-                <button id="add" style="width: 350px;height: 200px;"><h3><span>+</span> ADD</h3></button>
-            </article>
-        </selection>
+            <selection class="box">
+                <article class="box add-content">
+                    <h3 id="add"><span>+</span> ADD</h3>
+                </article>
+            </selection>
         </div>
         <form action="database/uploadFile.php" style="display: none;" method="post" id="addJoke"
               enctype="multipart/form-data">

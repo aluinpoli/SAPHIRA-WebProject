@@ -4,9 +4,9 @@ $(document).ready(function(){
         $('#addJoke').slideDown(500);
                 
     });
-    /*$('#submit').click(function(){   
+    $('#allJokes').click(function(){
         $('#jokes').slideDown(500);
         $('#addJoke').slideUp(500);
                 
-    });*/
+    });
 });
