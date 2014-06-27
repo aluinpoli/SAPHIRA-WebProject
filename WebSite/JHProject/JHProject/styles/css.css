@@ -230,6 +230,9 @@ section.box {
     line-height:4rem;
     padding:2rem 1rem;       
 }
+#add:hover{
+    cursor: pointer;
+}
 
 .add-content span {
     background-color:rgba(0, 0, 0, 0.1);
