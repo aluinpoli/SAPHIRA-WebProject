@@ -20,16 +20,12 @@
         <p></p>
     </div>
     <aside class="box">
-        <header>
-            <!--<figure>
-                <img src="imgs/break2.jpg" />
-            </figure>-->
-            <h1 id="logo"><em>code for</em> <strong>&#60;break&#62;</strong></h1>
-
+        <header>            
+            <h1 id="logo"><em>code for</em> <strong>break</strong></h1>
         </header>
         <nav id="tags">
-            <div class="filter"><a href="#" >FILTER</a></div>
-            <ul>
+            <a href="#" class="filter">FILTER</a>
+            <ul class="drop-down">
                 <li><a href="#" id="allJokes" data-scroll>ALL Jokes</a></li>
                 <li><a href="#" class="active-element" data-scroll>HTML</a></li>
                 <li><a href="#" data-scroll>CSS</a></li>
@@ -55,7 +51,7 @@
         include 'database/GetInfomation.php';
     ?>
 
-    <main class="grid grid-pad">
+    <main>
         <div id="jokes">
         <?php
             if(isset($joke) && isset($num_jokes)){
@@ -113,16 +109,23 @@
             <input type="radio" name="textJoke"  id="imgJoke" />
             <label for="imgJoke"/>Image format</label><br/>
             <input type="submit" name="submit" id="submit" value="POST">
-        </form>
-        
-        
-        
-        
+        </form>  
     </main>
 
     <footer>
         <div class="footer">
-            <a href="#">Older Posts</a>
+             <section id="media-links">
+            <ul>
+                <li><a href="#"><img src="http://transcript-bg.com/images/google+.png" alt="googlePlus logo" /></a></li>
+                <li><a href="#"><img src="https://www.seoclerk.com/pics/220394-1C4vDD1400131701.png" alt="twitter logo" /></a></li>
+                <li><a href="#"><img src="http://img2.wikia.nocookie.net/__cb20130729002338/gtawiki/images/4/44/Facebook_Logo.png" alt="facebook logo" /></a></li>
+                <li><a href="#"><img src="http://www.nakov.com/wp-content/uploads/2012/03/SoftUni-Logo.png" alt="SoftUni logo" /></a></li>
+                <li><a href="#"><img src="http://www.montreal-kosher.com/wp-content/uploads/2014/02/instagram-logo-png-transparent-backgroundadanali-hasan-kolcuoglu-restaurant-uoqzlntb.png" alt="Instagram logo" /></a></li>
+                <li><a href="#"><img src="https://origin.ih.constantcontact.com/fs105/1100458305930/img/468.png?ver=1384611382000" alt="flickr logo" /></a></li>
+            </ul>
+            <!--Social media links - softuni pages: main page, facebook page and etc.. our pages too.. friendly pages-->
+            <span>&copy; 2014 SoftUni</span>
+        </section>
         </div>
     </footer>
 </body>
