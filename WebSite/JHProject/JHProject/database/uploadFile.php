@@ -12,7 +12,7 @@ if(isset($_FILES['file'])) {
             || ($_FILES["file"]["type"] == "image/x-png") 
             || ($_FILES["file"]["type"] == "image/png")) 
             && in_array($extension, $allowedExts)) {
-        if ($_FILES["file"]["size"] < 5000000) {
+        if ($_FILES["file"]["size"] < 8000000) {
             if ($_FILES["file"]["error"] > 0) {
                 $error = "We have problem to upload this file !";
             } else {/*
