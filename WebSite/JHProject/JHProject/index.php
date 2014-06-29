@@ -24,7 +24,7 @@
             <h1 id="logo"><em>code for</em> <strong>break</strong></h1>
         </header>
         <nav id="tags">
-            <a href="#" class="filter">FILTER</a>
+            <a href="#" class="filter">filter<span class="filter-icon"></span></a>
             <ul class="drop-down">
                 <li><a href="#" id="allJokes" data-scroll>ALL Jokes</a></li>
                 <li><a href="#" class="active-element" data-scroll>HTML</a></li>
@@ -33,19 +33,17 @@
                 <li><a href="#" data-scroll>Java</a></li>
             </ul>
         </nav>
-
-        <section id="media-links">
+		
+        <footer id="media-links">
             <ul>
-                <li><a href="#"><img src="http://transcript-bg.com/images/google+.png" alt="googlePlus logo" /></a></li>
-                <li><a href="#"><img src="https://www.seoclerk.com/pics/220394-1C4vDD1400131701.png" alt="twitter logo" /></a></li>
-                <li><a href="#"><img src="http://img2.wikia.nocookie.net/__cb20130729002338/gtawiki/images/4/44/Facebook_Logo.png" alt="facebook logo" /></a></li>
-                <li><a href="#"><img src="http://www.nakov.com/wp-content/uploads/2012/03/SoftUni-Logo.png" alt="SoftUni logo" /></a></li>
-                <li><a href="#"><img src="http://www.montreal-kosher.com/wp-content/uploads/2014/02/instagram-logo-png-transparent-backgroundadanali-hasan-kolcuoglu-restaurant-uoqzlntb.png" alt="Instagram logo" /></a></li>
-                <li><a href="#"><img src="https://origin.ih.constantcontact.com/fs105/1100458305930/img/468.png?ver=1384611382000" alt="flickr logo" /></a></li>
+                <li><a class="softuni-link" title="Softuni" href="http://softuni.org" target="_blank"></a></li>
+                <li><a class="twitter-link" title="Twitter" target="_blank" href="https://twitter.com/softunibg"></a></li>
+                <li><a class="facebook-link" title="Facebook page" target="_blank" href="https://www.facebook.com/SoftwareUniversity"></a></li>
+				<li><a class="googleplus-link" title="Google Plus" target="_blank" href="https://plus.google.com/+SoftuniBg"></a></li>            
             </ul>
             <!--Social media links - softuni pages: main page, facebook page and etc.. our pages too.. friendly pages-->
             <span>&copy; 2014 SoftUni</span>
-        </section>
+        </footer>
     </aside>
     <?php
         include 'database/GetInfomation.php';
@@ -74,7 +72,7 @@
                             <section class="box">
                                 <article class="box story">
                                     <h2>'.$joke[$i]['title'].'</h2>
-                                    <p>'.$joke[$i]['content'].'</p>
+                                    <div class="story-entry">'.$joke[$i]['content'].'</div>
                                     <div class="date">
                                         <p>'.$joke[$i]['date'].'</p>
                                     </div>
@@ -111,22 +109,5 @@
             <input type="submit" name="submit" id="submit" value="POST">
         </form>  
     </main>
-
-    <footer>
-        <div class="footer">
-             <section id="media-links">
-            <ul>
-                <li><a href="#"><img src="http://transcript-bg.com/images/google+.png" alt="googlePlus logo" /></a></li>
-                <li><a href="#"><img src="https://www.seoclerk.com/pics/220394-1C4vDD1400131701.png" alt="twitter logo" /></a></li>
-                <li><a href="#"><img src="http://img2.wikia.nocookie.net/__cb20130729002338/gtawiki/images/4/44/Facebook_Logo.png" alt="facebook logo" /></a></li>
-                <li><a href="#"><img src="http://www.nakov.com/wp-content/uploads/2012/03/SoftUni-Logo.png" alt="SoftUni logo" /></a></li>
-                <li><a href="#"><img src="http://www.montreal-kosher.com/wp-content/uploads/2014/02/instagram-logo-png-transparent-backgroundadanali-hasan-kolcuoglu-restaurant-uoqzlntb.png" alt="Instagram logo" /></a></li>
-                <li><a href="#"><img src="https://origin.ih.constantcontact.com/fs105/1100458305930/img/468.png?ver=1384611382000" alt="flickr logo" /></a></li>
-            </ul>
-            <!--Social media links - softuni pages: main page, facebook page and etc.. our pages too.. friendly pages-->
-            <span>&copy; 2014 SoftUni</span>
-        </section>
-        </div>
-    </footer>
 </body>
 </html>
