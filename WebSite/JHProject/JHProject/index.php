@@ -91,7 +91,7 @@
                 </article>
             </selection>
         </div>
-        <form action="" style="display: none;" method="GET" id="addJoke"
+        <form action="database/uploadFile.php" style="display: none;" method="POST" id="addJoke"
               enctype="multipart/form-data"><!--database/uploadFile.php-->
             <label for="title">Joke Title</label><br>
             <input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/><br>
@@ -108,11 +108,10 @@
                 <option value="2">for CSS</option>
                 <option value="3">for Java</option>
                 <option value="4">for C#</option>
-                <option value="all">for ALL</option>
             </select>
-            <input type="radio" name="textJoke" checked="checked" id="textJoke" />
+            <input type="radio" name="textJoke" value="text" checked="checked" id="textJoke" />
             <label for="textJoke"/>Text format</label>           
-            <input type="radio" name="textJoke"  id="imgJoke" />
+        <input type="radio" name="textJoke" value="img" id="imgJoke" />
             <label for="imgJoke"/>Image format</label><br/>
             <input type="submit" name="submit" id="submit" value="POST">
         </form>  

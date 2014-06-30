@@ -32,21 +32,19 @@ CREATE TABLE IF NOT EXISTS `jokes` (
   `joke_content` text NOT NULL,
   `joke_date` date NOT NULL,
   `joke_type` int(2) NOT NULL,
-  `joke_sphere` int(2) NOT NULL,
   PRIMARY KEY (`joke_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
 
 --
--- Схема на данните от таблица `jokes`
+-- Структура на таблица `jokes_sphere`
 --
 
-INSERT INTO `jokes` (`joke_id`, `joke_title`, `joke_content`, `joke_date`, `joke_type`, `joke_sphere`) VALUES
-(1, 'Common Nakov`s joke', 'Изчезни бе гад мръсна', '2014-06-22', 2, 0),
-(2, 'Common Nakov`s joke', 'Изчезни бе гад мръсна', '2014-06-13', 2, 0),
-(3, 'My style', 'imgs/web-des.jpg', '2014-06-18', 1, 0),
-(4, 'My donuts', 'imgs/donuts.jpg', '2014-03-04', 1, 0),
-(5, 'Common Nakov`s joke', 'Изчезни бе гад мръсна', '2014-06-28', 2, 0),
-(6, 'Your donuts', 'imgs/donuts.jpg', '2014-07-11', 1, 0);
+CREATE TABLE IF NOT EXISTS `jokes_sphere` (
+  `joke_id` int(2) NOT NULL,
+  `joke_sphere` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

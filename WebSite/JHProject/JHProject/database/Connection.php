@@ -40,5 +40,6 @@ class DatabaseConnect {
     public function inserted_id() {
         return $this->_db->insert_id;
     }
+    
 
 }
