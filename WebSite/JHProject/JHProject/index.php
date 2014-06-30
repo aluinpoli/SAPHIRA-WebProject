@@ -26,11 +26,11 @@
         <nav id="tags">
             <a href="#" class="filter">filter<span class="filter-icon"></span></a>
             <ul class="drop-down">
-                <li><a href="#" id="allJokes" data-scroll>ALL Jokes</a></li>
-                <li><a href="#" class="active-element" data-scroll>HTML</a></li>
-                <li><a href="#" data-scroll>CSS</a></li>
-                <li><a href="#" data-scroll>C#</a></li>
-                <li><a href="#" data-scroll>Java</a></li>
+                <li><a href="?show=all" id="allJokes" data-scroll>ALL Jokes</a></li>
+                <li><a href="?show=html" class="active-element" data-scroll>HTML</a></li>
+                <li><a href="?show=css" data-scroll>CSS</a></li>
+                <li><a href="?show=csharp" data-scroll>C#</a></li>
+                <li><a href="?show=java" data-scroll>Java</a></li>
             </ul>
         </nav>
 		
@@ -52,29 +52,29 @@
     <main>
         <div id="jokes">
         <?php
-            if(isset($joke) && isset($num_jokes)){
-                for ($i = $num_jokes; $i >=1 ; $i--) {
-                    if($joke[$i]['type']==1){
+            if(isset($joke) && isset($id)){
+                for ($i = sizeof($id); $i >=1 ; $i--) {
+                    if($joke[$id[$i]]['type']==1){
                         echo '
                         <section class="box">
                             <article class="box pic">
                                 <figure>
-                                    <a href="'.$joke[$i]['content'].'" target="_blank"><img src="'.$joke[$i]['content'].'" /></a>
+                                    <a href="'.$joke[$id[$i]]['content'].'" target="_blank"><img src="'.$joke[$id[$i]]['content'].'" /></a>
                                 </figure>
-                                <figcaption>'.$joke[$i]['title'].'</figcaption>
+                                <figcaption>'.$joke[$id[$i]]['title'].'</figcaption>
                                 <div class="date">
-                                    <p>'.$joke[$i]['date'].'</p>
+                                    <p>'.$joke[$id[$i]]['date'].'</p>
                                 </div>
                             </article>
                         </section>';
-                    }  elseif ($joke[$i]['type']==2) {
+                    }  elseif ($joke[$id[$i]]['type']==2) {
                         echo '
                             <section class="box">
                                 <article class="box story">
-                                    <h2>'.$joke[$i]['title'].'</h2>
-                                    <div class="story-entry">'.$joke[$i]['content'].'</div>
+                                    <h2>'.$joke[$id[$i]]['title'].'</h2>
+                                    <div class="story-entry">'.$joke[$id[$i]]['content'].'</div>
                                     <div class="date">
-                                        <p>'.$joke[$i]['date'].'</p>
+                                        <p>'.$joke[$id[$i]]['date'].'</p>
                                     </div>
                                 </article>
                             </section>';

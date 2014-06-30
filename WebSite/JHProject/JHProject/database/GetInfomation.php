@@ -25,7 +25,9 @@ if($_GET){
 $db = new DatabaseConnect;
 $query = $db->execute($sql);
 if (isset($query)) {
+
     $i=1;
+
     while ($row = mysqli_fetch_assoc($query)) {
         $id[$i]=$row['joke_id'];
         $joke[$id[$i]]['title'] = $row['joke_title'];
