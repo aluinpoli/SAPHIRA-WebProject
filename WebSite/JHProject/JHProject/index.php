@@ -11,13 +11,16 @@
     <script src="script/showForm.js"></script>   
 </head>
 <body>
-    <div id="information" style="display: none;">
+    <?php
+    // Turn off all error reporting
+    error_reporting(0);
+    ?>
+    <div id="information" style="display: inline;">
         <?php
-            if(isset($message)){
-                echo '<p>'.$message.'</p>';
+            if(isset($GLOBALS['msg'])){
+                echo '<p>'.$GLOBALS['msg'].'</p>';
             }
         ?>
-        <p></p>
     </div>
     <aside class="box">
         <header>            
@@ -88,8 +91,8 @@
                 </article>
             </selection>
         </div>
-        <form action="database/uploadFile.php" style="display: none;" method="post" id="addJoke"
-              enctype="multipart/form-data">
+        <form action="" style="display: none;" method="GET" id="addJoke"
+              enctype="multipart/form-data"><!--database/uploadFile.php-->
             <label for="title">Joke Title</label><br>
             <input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/><br>
             <div id="imgFormat" style="display: none;" >
@@ -99,9 +102,14 @@
             <div  id="textFormat">
                 <label for="content" >The Joke</label><br>
                 <textarea  id="content" name="content" placeholder="The Joke..." ></textarea><br>
-            </div>
-            <label for="date">Date:</label>
-            <input type="date" name="date" required="required" id="date"/><br>          
+            </div>    
+            <select name="sphere[]" multiple="multiple">
+                <option value="1">for HTML</option>
+                <option value="2">for CSS</option>
+                <option value="3">for Java</option>
+                <option value="4">for C#</option>
+                <option value="all">for ALL</option>
+            </select>
             <input type="radio" name="textJoke" checked="checked" id="textJoke" />
             <label for="textJoke"/>Text format</label>           
             <input type="radio" name="textJoke"  id="imgJoke" />

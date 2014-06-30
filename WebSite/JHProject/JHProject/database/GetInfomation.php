@@ -4,24 +4,25 @@ include_once 'Connection.php';
 
 $sql="select * from jokes";
 if($_GET){
+    $sql='select * from jokes as j JOIN jokes_sphere as js ON j.joke_id=js.joke_id';
     switch ($_GET['show']){
     case "all":
+        $sql="select * from jokes";
         break;
     case "html":
-        $sql="select * from jokes where joke_sphere=1";
+        $sql.=" where joke_sphere=1";
         break; 
     case "css":
-        $sql="select * from jokes where joke_sphere=2";
+        $sql.=" where joke_sphere=2";
         break; 
     case "java":
-        $sql="select * from jokes where joke_sphere=3";
+        $sql.=" where joke_sphere=3";
         break; 
     case "csharp":
-        $sql="select * from jokes where joke_sphere=4";
+        $sql.=" where joke_sphere=4";
         break; 
     }
 }
-
 $db = new DatabaseConnect;
 $query = $db->execute($sql);
 if (isset($query)) {
@@ -34,7 +35,6 @@ if (isset($query)) {
         $joke[$id[$i]]['content'] = $row['joke_content'];
         $joke[$id[$i]]['date'] = $row['joke_date'];
         $joke[$id[$i]]['type'] = $row['joke_type'];
-        $joke[$id[$i]]['sphere'] = $row['joke_sphere'];
         $i++;
     }
 }
