@@ -39,7 +39,7 @@
 		
         <footer id="media-links">
             <ul>
-                <li><a class="softuni-link" title="Softuni" href="http://softuni.org" target="_blank"></a></li>
+                <li><a class="softuni-link" title="Softuni" href="http://softuni.bg" target="_blank"></a></li>
                 <li><a class="twitter-link" title="Twitter" target="_blank" href="https://twitter.com/softunibg"></a></li>
                 <li><a class="facebook-link" title="Facebook page" target="_blank" href="https://www.facebook.com/SoftwareUniversity"></a></li>
 				<li><a class="googleplus-link" title="Google Plus" target="_blank" href="https://plus.google.com/+SoftuniBg"></a></li>            
@@ -95,38 +95,38 @@
         <legend>
             POST Your Entry
         </legend>
-        <form action="database/uploadFile.php" style="display: none;" method="POST" id="addJoke"
-              enctype="multipart/form-data"><!--database/uploadFile.php-->
-			<p>
-				<label for="title">Joke Title</label><br>
-				<input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/>
-			</p>
-            <p>
-            <div id="imgFormat" style="display: none;" >
-                <label for="file">Filename:</label><br>
-                <input type="file" name="file"  id="file"><br>
-            </div>
-			</p>
-            <p>
-            <div  id="textFormat">
-                <label for="content" >The Joke</label><br>
-                <textarea  id="content" name="content" placeholder="The Joke..." ></textarea> 
-			</p>
-            <p>
-            </div>    
-            <select name="sphere[]" multiple="multiple">
-                <option value="1">for HTML</option>
-                <option value="2">for CSS</option>
-                <option value="3">for Java</option>
-                <option value="4">for C#</option>
-            </select>
-            <input type="radio" name="textJoke" value="text" checked="checked" id="textJoke" />
-            <label for="textJoke"/>Text format</label>           
-        <input type="radio" name="textJoke" value="img" id="imgJoke" />
-            <label for="imgJoke"/>Image format</label> 
-			</p>            
-            <input type="submit" name="submit" id="submit" value="POST">
-        </form>  
+			<form action="database/uploadFile.php" style="display: none;" method="POST" id="addJoke"
+					enctype="multipart/form-data"><!--database/uploadFile.php-->
+				<p>
+					<label for="title">Joke Title</label><br>
+					<input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/>
+				</p>
+				<p>
+				<div id="imgFormat" style="display: none;" >
+					<label for="file">Filename:</label><br>
+					<input type="file" name="file"  id="file"><br>
+				</div>
+				</p>
+				<p>
+				<div  id="textFormat">
+					<label for="content" >The Joke</label><br>
+					<textarea  id="content" name="content" placeholder="The Joke..." ></textarea> 
+				</p>
+				<p>
+				</div>    
+				<select name="sphere[]" multiple="multiple">
+					<option value="1">for HTML</option>
+					<option value="2">for CSS</option>
+					<option value="3">for Java</option>
+					<option value="4">for C#</option>
+				</select>
+				<input type="radio" name="textJoke" value="text" checked="checked" id="textJoke" />
+				<label for="textJoke"/>Text format</label>           
+			<input type="radio" name="textJoke" value="img" id="imgJoke" />
+				<label for="imgJoke"/>Image format</label> 
+				</p>            
+				<input type="submit" name="submit" id="submit" value="POST">
+			</form>  
 		</fieldset>
     </main>
 </body>
