@@ -22,7 +22,7 @@
             }
         ?>
     </div>
-    <aside class="box">
+    <aside>
         <header>            
             <h1 id="logo"><em>code for</em> <strong>break</strong></h1>
         </header>
@@ -37,7 +37,7 @@
             </ul>
         </nav>
 		
-        <footer id="media-links">
+        <div id="media-links">
             <ul>
                 <li><a class="softuni-link" title="Softuni" href="http://softuni.bg" target="_blank"></a></li>
                 <li><a class="twitter-link" title="Twitter" target="_blank" href="https://twitter.com/softunibg"></a></li>
@@ -91,6 +91,17 @@
                 </article>
             </selection>
         </div>
+
+		 <footer>
+            <ul>
+                <li><a class="softuni-link" title="Softuni" href="http://softuni.bg" target="_blank"></a></li>
+                <li><a class="twitter-link" title="Twitter" target="_blank" href="https://twitter.com/softunibg"></a></li>
+                <li><a class="facebook-link" title="Facebook page" target="_blank" href="https://www.facebook.com/SoftwareUniversity"></a></li>
+				<li><a class="googleplus-link" title="Google Plus" target="_blank" href="https://plus.google.com/+SoftuniBg"></a></li>            
+            </ul>
+            <!--Social media links - softuni pages: main page, facebook page and etc.. our pages too.. friendly pages-->
+            <span>&copy; 2014 SoftUni</span>
+        </footer>
 		
 			<form action="database/uploadFile.php" style="display: none;" method="POST" id="addJoke"
 					enctype="multipart/form-data"><!--database/uploadFile.php-->
