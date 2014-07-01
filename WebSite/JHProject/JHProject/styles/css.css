@@ -227,11 +227,12 @@ div.date > p{
 }
 
 .story > h2 {
+    font-family: 'Century Gothic', futura, 'URW Gothic L', Verdana, sans-serif;
     margin:0.6rem 1rem;
     font-size:1.4rem;
     line-height:1.6rem;
     word-wrap:break-word;  
-    font-style:italic;      
+      
 }
 .story > .story-entry {
     margin:0 1rem;
@@ -302,8 +303,8 @@ figure{
   header  { order: 1;} 
   nav    { order: 2; }  
   main { order: 3;}   
-  article, .box .add-content { width: 96%;}  
-  footer { order: 4;}  
+  article, .box .add-content, form, fieldset { width: 96%;}  
+  footer { order: 4; display:none;}  
   
 }
 
@@ -312,8 +313,9 @@ figure{
   aside  { order: 1; position:fixed;width:300px; height:100%;} 
   main    { order: 2; position:relative; left:305px; margin-right:305px;}  
   article, .box .add-content { order: 3; width:280px; max-height:280px;}   
+  form, fieldset{min-width:300px;}
   figure { width: 280px; max-height:200px;}  
-  footer { order: 4;}  
+  footer { order: 4; display:block;}  
   /*section#media-links{display:block;}*/
 }
 /*main START*/  
@@ -337,11 +339,13 @@ figure{
 }*/
 
 /*FORM Post entry*/
+form#addJoke{
+    width:100%;
+}
 
  fieldset{
      color: #6A6A6A;
-     margin:0.5rem;
-     width:300px;
+     margin:0.5rem;    
      font-size:0.9rem;
      box-sizing:border-box;    
      padding:0.5rem;
@@ -353,7 +357,7 @@ figure{
     font-size:2.1rem;
     padding-top:0.5rem;
  }
- form>p{
+ fieldset>p{
     padding:0.5rem;
     border-bottom:1px solid #ccc; 
     text-align:left;
@@ -372,8 +376,13 @@ figure{
  input[type="file"],
  textarea{
      padding:2%;
-     width:98%;
+     width:95%;
  }
+ select{
+     padding:2%;
+     width:98%;
+ } 
+ 
  input[type="submit"]{
     background: #418BC9;
     padding:0.5rem 1rem;

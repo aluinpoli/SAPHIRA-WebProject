@@ -91,43 +91,45 @@
                 </article>
             </selection>
         </div>
-		<fieldset>
-        <legend>
-            POST Your Entry
-        </legend>
+		
 			<form action="database/uploadFile.php" style="display: none;" method="POST" id="addJoke"
 					enctype="multipart/form-data"><!--database/uploadFile.php-->
+					<fieldset>
+					<legend>
+						POST Your Entry
+					</legend>
 				<p>
 					<label for="title">Joke Title</label><br>
 					<input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/>
 				</p>
-				<p>
+				
 				<div id="imgFormat" style="display: none;" >
-					<label for="file">Filename:</label><br>
-					<input type="file" name="file"  id="file"><br>
-				</div>
-				</p>
-				<p>
+					<label for="file">Filename:</label>
+					<input type="file" name="file"  id="file">
+				</div>			
+				
 				<div  id="textFormat">
-					<label for="content" >The Joke</label><br>
+					<label for="content" >The Joke</label>
 					<textarea  id="content" name="content" placeholder="The Joke..." ></textarea> 
-				</p>
-				<p>
-				</div>    
+				</div>   
+				
+				<p> 
 				<select name="sphere[]" multiple="multiple">
-					<option value="1">for HTML</option>
-					<option value="2">for CSS</option>
-					<option value="3">for Java</option>
-					<option value="4">for C#</option>
+					<option value="1">for <span>HTML</span></option>
+					<option value="2">for <span>CSS</span></option>
+					<option value="3">for <span>Java</span></option>
+					<option value="4">for <span>C#</span></option>
 				</select>
+				</p><p>
 				<input type="radio" name="textJoke" value="text" checked="checked" id="textJoke" />
 				<label for="textJoke"/>Text format</label>           
 			<input type="radio" name="textJoke" value="img" id="imgJoke" />
 				<label for="imgJoke"/>Image format</label> 
 				</p>            
 				<input type="submit" name="submit" id="submit" value="POST">
+				</fieldset>
 			</form>  
-		</fieldset>
+		
     </main>
 </body>
 </html>
