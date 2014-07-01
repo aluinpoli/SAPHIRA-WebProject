@@ -91,17 +91,28 @@
                 </article>
             </selection>
         </div>
+		<fieldset>
+        <legend>
+            POST Your Entry
+        </legend>
         <form action="database/uploadFile.php" style="display: none;" method="POST" id="addJoke"
               enctype="multipart/form-data"><!--database/uploadFile.php-->
-            <label for="title">Joke Title</label><br>
-            <input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/><br>
+			<p>
+				<label for="title">Joke Title</label><br>
+				<input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/>
+			</p>
+            <p>
             <div id="imgFormat" style="display: none;" >
                 <label for="file">Filename:</label><br>
                 <input type="file" name="file"  id="file"><br>
             </div>
+			</p>
+            <p>
             <div  id="textFormat">
                 <label for="content" >The Joke</label><br>
-                <textarea  id="content" name="content" placeholder="The Joke..." ></textarea><br>
+                <textarea  id="content" name="content" placeholder="The Joke..." ></textarea> 
+			</p>
+            <p>
             </div>    
             <select name="sphere[]" multiple="multiple">
                 <option value="1">for HTML</option>
@@ -112,9 +123,11 @@
             <input type="radio" name="textJoke" value="text" checked="checked" id="textJoke" />
             <label for="textJoke"/>Text format</label>           
         <input type="radio" name="textJoke" value="img" id="imgJoke" />
-            <label for="imgJoke"/>Image format</label><br/>
+            <label for="imgJoke"/>Image format</label> 
+			</p>            
             <input type="submit" name="submit" id="submit" value="POST">
         </form>  
+		</fieldset>
     </main>
 </body>
 </html>
