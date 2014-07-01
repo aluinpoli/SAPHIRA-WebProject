@@ -129,5 +129,8 @@
 			</form>  
 		</fieldset>
     </main>
+	<footer>
+		<div class="footer"><a href="" onClick ="document.body.scrollTop = document.documentElement.scrollTop = 0;">To Top</a></div>
+	</footer>
 </body>
 </html>

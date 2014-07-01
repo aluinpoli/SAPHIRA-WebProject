@@ -318,23 +318,28 @@ figure{
 }
 /*main START*/  
 
-/*/*footer*/
-/*footer {
+/*footer*/
+body > footer {
     display: inline-block;
-    position:relative;   
+    position: fixed;   
     bottom: 0;
+	left: 60%;
     text-align: center;
-    width: 100%;  
-    clear:both;     
+    width: 8rem;
+	height: 3rem;
+    clear:both;
 }
 .footer {
-    margin: 0;   
-    background-color: #418BC9;     
+	height: 100%;
+    background-color: #418BC9;
+	padding-top: 10%;
+	border-radius: 10px;	
 }
 .footer a {
+	padding: 10% 30% 10% 30%;
     text-decoration: none;
     color: white;
-}*/
+}
 
 /*FORM Post entry*/
 
