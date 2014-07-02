@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>code for break</title>
+        <link rel="shortcut icon" href="imgs/icon.ico">
+        <link href="styles/reset.css" rel="stylesheet" />
+        <link href="styles/css.css" rel="stylesheet" />
+    </head>
+<body>
+    <fieldset>
+        <legend>
+            POST Your Entry
+        </legend>
+        <form action="database/uploadFile.php" method="post"
+              enctype="multipart/form-data">
+            <p>
+                <label for="title">Joke Title</label>
+                <input type="text" name="title" id="title" autofocus="autofocus" required="required" placeholder="Joke`s title" />
+            </p>
+            <p>
+                <label for="file">Filename:</label>
+                <input type="file" name="file" id="file">
+            </p>
+            <p>
+                <label for="content">The Joke</label>
+                <textarea id="content" name="content"></textarea>
+            </p>
+            <p>
+                <label for="date">Date:</label>
+                <input type="date" name="date" required="required" id="date" />
+            </p>
+            <p>               
+                <input type="radio" name="textJoke" id="textJoke" value="Text format" /><label class="radio" for="textJoke" />Text format</label>                
+                <input type="radio" name="textJoke" id="imgJoke" value="Image format" /><label class="radio" for="imgJoke" />Image format</label>
+            </p>
+                <input type="submit" name="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>
