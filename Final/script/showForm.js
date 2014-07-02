@@ -9,4 +9,12 @@ $(document).ready(function(){
         $('#addJoke').slideUp(500);
                 
     });
+    $('.filter').click(function(){
+        //$('.drop-down').slideUp(500);        
+    if ( $( ".drop-down" ).is( ":hidden" ) ) {
+        $( ".drop-down" ).slideDown( "slow" );
+    } else {
+         $( ".drop-down" ).slideUp(500);
+    }
+  });
 });
