@@ -1,7 +1,9 @@
 <?php
 
 include_once 'Connection.php';
-
+/*
+ * get currect SQL Query
+ */
 $sql="select * from jokes";
 if($_GET){
     $sql='select * from jokes as j JOIN jokes_sphere as js ON j.joke_id=js.joke_id';
@@ -23,8 +25,15 @@ if($_GET){
         break; 
     }
 }
+/*
+ * create new instance and 
+ * database connect
+ */
 $db = new DatabaseConnect;
 $query = $db->execute($sql);
+/*
+ * if query is execute sort information in $joke massive
+ */
 if (isset($query)) {
 
     $i=1;
