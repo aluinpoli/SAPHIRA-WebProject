@@ -46,7 +46,7 @@
             </ul>
             <!--Social media links - softuni pages: main page, facebook page and etc.. our pages too.. friendly pages-->
             <span>&copy; 2014 SoftUni</span>
-        </footer>
+        </div>
     </aside>
     <?php
         include 'database/GetInfomation.php';
@@ -63,8 +63,10 @@
                             <article class="box pic">
                                 <figure>
                                     <a href="'.$joke[$id[$i]]['content'].'" target="_blank"><img src="'.$joke[$id[$i]]['content'].'" /></a>
+									
                                 </figure>
-                                <figcaption>'.$joke[$id[$i]]['title'].'</figcaption>
+								<figcaption>'.$joke[$id[$i]]['title'].'</figcaption>
+                                
                                 <div class="date">
                                     <p>'.$joke[$id[$i]]['date'].'</p>
                                 </div>
@@ -110,7 +112,7 @@
 						POST Your Entry
 					</legend>
 				<p>
-					<label for="title">Joke Title</label><br>
+					<label for="title">Joke Title</label><br />
 					<input type="text" name="title" id="title" autofocus="autofocus"  required="required" placeholder="Joke`s title"/>
 				</p>
 				
@@ -126,16 +128,16 @@
 				
 				<p> 
 				<select name="sphere[]" multiple="multiple">
-					<option value="1">for <span>HTML</span></option>
-					<option value="2">for <span>CSS</span></option>
-					<option value="3">for <span>Java</span></option>
-					<option value="4">for <span>C#</span></option>
+					<option value="1">for HTML</option>
+					<option value="2">for CSS</option>
+					<option value="3">for Java</option>
+					<option value="4">for C#</option>
 				</select>
 				</p><p>
 				<input type="radio" name="textJoke" value="text" checked="checked" id="textJoke" />
-				<label for="textJoke"/>Text format</label>           
+				<label for="textJoke">Text format</label>           
 			<input type="radio" name="textJoke" value="img" id="imgJoke" />
-				<label for="imgJoke"/>Image format</label> 
+				<label for="imgJoke">Image format</label> 
 				</p>            
 				<input type="submit" name="submit" id="submit" value="POST">
 				</fieldset>
